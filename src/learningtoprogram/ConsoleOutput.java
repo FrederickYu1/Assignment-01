@@ -26,7 +26,13 @@ public class ConsoleOutput{
         c.println("Happy " + 1 + " st Birthday");  //you can combine things with +, this is called
                                                         //concatenation
    
-        
+        Console myConsole = new Console("Example 1");
+
+myConsole.println("Hi");
+
+ Console myConsole = new Console(30);
+
+myConsole.println("Hi");
 
     }
 
