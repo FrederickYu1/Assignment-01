@@ -20,7 +20,7 @@ import becker.robots.*;
  *
  * @author Frederick Yu
  */
-public class ASCIIArt{
+public class SuperCalculator{
 
     /**
      * @param args the command line arguments
