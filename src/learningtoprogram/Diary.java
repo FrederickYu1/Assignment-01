@@ -27,10 +27,10 @@ public class Diary{
      */
     public static void main(String[] args) {
         Console c = new Console();			
-        c.println("October " + 8 + " " + 2020);
-        c.println("Frederick Yu");
-        c.println("My First Time Programming in Java!");
-        c.println("For my first time programming I found some thing pretty challenging, but in the end after som bumps I think I understand some of it now");
+        c.println("October " + 8 + " " + 2020); //I am printing out the date, but I can't do printDate() because the date has to be the same as the day I wrote the diary
+        c.println("Frederick Yu");//I am printing my name
+        c.println("My First Time Programming in Java!");//I am giving my diary a title
+        c.println("For my first time programming I found some thing pretty challenging, but in the end after som bumps I think I understand some of it now");//I am writing my diary
     }
 
 }

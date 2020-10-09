@@ -27,13 +27,13 @@ public class RestaurantHelper{
      */
     public static void main(String[] args) {
         Console c = new Console();			
-        c.println("The name of this restaurant is McDonald");
-        c.println("Hello! Welcome to McDonalds, the biggest fast food burger chain!");
-        c.println("** Hi, my nmae is Frederick and I will be your server tonight! **");
+        c.println("The name of this restaurant is McDonald");//This is the name of the restaurant 
+        c.println("Hello! Welcome to McDonalds, the biggest fast food burger chain!");//I am introducing the restaurant 
+        c.println("** Hi, my nmae is Frederick and I will be your server tonight! **");//I am introducing myself
         c.println("Served on");
-        c.printDate();
-        c.println(" ");
-        c.printTime();
+        c.printDate();//I am telling them the date
+        c.println(" ");//I want to seperate the date and time, so it's not in a cluster
+        c.printTime();//I am printing the time 
     }
 
 }
