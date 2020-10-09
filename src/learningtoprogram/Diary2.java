@@ -37,7 +37,7 @@ public class Diary2{
         c.println(name);//This outputs what the user put in as their name
         c.println(title);
         c.println("My First Time Programming in Java!");//I am giving my diary a title
-        c.println("For my first time programming I found some thing pretty challenging, but in the end after som bumps I think I understand some of it now");//I am writing my diary
+        c.println("For my first time programming I found some thing pretty challenging, but in the end after som bumps I think I understand some of the material now");//I am writing my diary
     }
 
 }
