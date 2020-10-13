@@ -15,6 +15,7 @@ package learningtoprogram;
 import hsa.*;
 import boardGame.*;
 import becker.robots.*;
+import java.awt.Color;
 
 /**
  *
@@ -28,26 +29,36 @@ public class SuperCalculator{
     public static void main(String[] args) {
         Console c = new Console();
         c.setCursor(9,40);
-//        c.setTextColor(Color.RED);
+        c.setTextColor(Color.RED);
         c.println("   ---   "); //I am trying to create a square here
         c.setCursor(10,40);
+        c.setTextColor(Color.ORANGE);
         c.println("   | |   ");
         c.setCursor(11,40);
+        c.setTextColor(Color.YELLOW);
         c.println("   ---   ");//This is the end of my square
         c.setCursor(12,40);
+        c.setTextColor(Color.GREEN);
         c.println("----------");//This is the beginning of me trying to draw the letter F
         c.setCursor(13,40);
+        c.setTextColor(Color.CYAN);
         c.println("|");
         c.setCursor(14,40);
+        c.setTextColor(Color.BLUE);
         c.println("|");
         c.setCursor(15,40);
+        c.setTextColor(Color.MAGENTA);
         c.println("|------");
         c.setCursor(16,40);
+        c.setTextColor(Color.RED);
         c.println("|");
         c.setCursor(17,40);
+        c.setTextColor(Color.ORANGE);
         c.println("|");
         c.setCursor(18,40);
+        c.setTextColor(Color.YELLOW);
         c.println("|");
+        c.setTextColor(Color.BLACK);
         String enter;//I am creating a string that allows the user to type something to clear the screen
         c.println("If you would like to clear the screen please enter a letter");
         enter = c.readLine();//This allows the user to type something
