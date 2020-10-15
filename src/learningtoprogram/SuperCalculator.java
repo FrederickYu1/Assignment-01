@@ -27,7 +27,8 @@ public class SuperCalculator{
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-Console c = new Console();int col = c.getMaxColumns();
+Console c = new Console();
+int col = c.getMaxColumns();//This code allows me to know how many columns are in the console
 c.setCursor(6,col/3);
 c.setTextColor(Color.RED);//This changes the colour to red
 c.println("  ++");  
