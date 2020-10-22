@@ -31,6 +31,10 @@ return (((double)temp)/Math.pow(10,c));
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+art();
+menu();
+    }
+public static void art(){
 Console c = new Console();
 int col = c.getMaxColumns();//This code allows me to know how many columns are in the console
 c.setCursor(6,col/3);
@@ -71,6 +75,9 @@ String enter;//I am creating a string that allows the user to type something to 
 c.println("If you would like to clear the screen please enter a letter");
 enter = c.readLine();//This allows the user to type something
 c.clear();//This clears the screens
+}
+public static void menu(){
+Console c = new Console();
 int menu;//I am creating a variable for the user to enter the number the mathces their option
 c.println("Now there will be a menu with 6 options. Type the number next to the option to select it");
 c.println("1) Linear Equations");
@@ -154,7 +161,12 @@ else if(menu == 6){
     c.println("Great you have chosen Satistics!");
     c.println("Sorry this is still under construction");
     }
-  }
 }
+}
+
+
+
+
+
 
 

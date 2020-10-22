@@ -25,7 +25,6 @@ public class ConsoleOutput{
         c.println(25/5);				//you can do basic math in the printlns
         c.println("Happy " + 1 + " st Birthday");  //you can combine things with +, this is called
                                                         //concatenation
-        
     }
 
 }
