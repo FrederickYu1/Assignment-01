@@ -157,8 +157,67 @@ public static void menu(Console c){
     else if(menu == 3){
         c.clear();
         c.println("Great you have chosen Number Fun!");
-        c.println("Sorry this is still under construction");
+        int a;
+        int b;
+        c.println("Enter a number:");
+        a = c.readInt();
+        c.println("Enter another number:");
+        b = c.readInt();
+        if(a % b == 0){
+           c.println(a + " is dvisible by " + b);
         }
+        else{
+            c.println(a + " is not divisble by " + b);
+        }
+        int number;
+        c.println("Please enter a number:");
+        number = c.readInt();
+        if(number % 2 == 0){
+            c.println("The number " + number + " is  even");
+        }
+        else{
+            c.println("The number " + number + " is not even");
+        }
+        int positiveOrNegative;
+        c.println("Please enter an integer:");
+        positiveOrNegative = c.readInt();
+        if(positiveOrNegative > 0){
+            c.println("The integer " + positiveOrNegative + " is positive");
+        }
+        else{
+            c.println("The integer " + positiveOrNegative + " is negative");
+        }
+        int num1;
+        int num2;
+        int num3;
+        int num4;
+        int num5;
+        c.println("Enter the first number: ");
+        num1 = c.readInt();
+        c.println("Enter the second number: ");
+        num2 = c.readInt();
+        c.println("Enter the third numer: ");
+        num3 = c.readInt();
+        c.println("Enter the fourth number: ");
+        num4 = c.readInt();
+        c.println("Enter the fifth number: ");
+        num5 = c.readInt();
+        if(num1 > num2 && num1 > num3 && num1 > num4 && num1 > num5){
+            c.println("The highest number was " + num1);
+        }
+        else if(num2 > num1 && num2 > num3 && num2 > num4 && num2 > num5){
+            c.println("The highest number was " + num2);
+        }
+        else if(num3 > num1 && num3 > num2 && num3 > num4 && num3 > num5){
+            c.println("The highest number is " + num3);
+        }
+        else if(num4 > num1 && num4 > num2 && num4 > num3 && num4 > num5){
+            c.println("The highest number is " + num4);
+        }
+        else{
+            c.println("The highest number is " + num5);
+        }
+    }
     else if(menu == 4){
         c.clear();
         c.println("Great you have chosen Word Math!");
