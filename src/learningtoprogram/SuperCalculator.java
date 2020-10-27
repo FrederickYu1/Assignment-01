@@ -157,36 +157,50 @@ public static void menu(Console c){
     else if(menu == 3){
         c.clear();
         c.println("Great you have chosen Number Fun!");
+        //I first start of with doing factors.
+        //I create two variables to store the two numberst the user is going to input
         int a;
         int b;
+        //Next I ask for them to enter a number and I store that number inside a variable. Then I repeat that
         c.println("Enter a number:");
         a = c.readInt();
         c.println("Enter another number:");
         b = c.readInt();
+        //I create an if statement saying that if the if their first number divided by their second number has a 0 remainder, then the two numbers are divisble. 
         if(a % b == 0){
            c.println(a + " is dvisible by " + b);
         }
+        //If the if statement wasn't true, then it can only be not divisble
         else{
             c.println(a + " is not divisble by " + b);
         }
+        //Next I move on to odd or even
+        //I start by creating a variable to store the number that they input
         int number;
         c.println("Please enter a number:");
         number = c.readInt();
+        //My if statement says that if their number dvided by 2 has a remainder of 0, then the number is even.
         if(number % 2 == 0){
             c.println("The number " + number + " is  even");
         }
+        //If the statement above wasn't true, then the number has to be odd 
         else{
-            c.println("The number " + number + " is not even");
+            c.println("The number " + number + " is odd");
         }
+        //Next I do the postive/negative question
+        //I start by creating a integer to store the number that they are going to input
         int positiveOrNegative;
         c.println("Please enter an integer:");
         positiveOrNegative = c.readInt();
+        //This if statement just says that if their number is bigger than 0, then the number is positive
         if(positiveOrNegative > 0){
             c.println("The integer " + positiveOrNegative + " is positive");
         }
         else{
             c.println("The integer " + positiveOrNegative + " is negative");
         }
+        //Lastly, I do highest number
+        //I create 5 variable to store the 5 variables I am going to ask the user to input 
         int num1;
         int num2;
         int num3;
@@ -202,6 +216,7 @@ public static void menu(Console c){
         num4 = c.readInt();
         c.println("Enter the fifth number: ");
         num5 = c.readInt();
+        //My if and else if statements takes one of the numbers they input, for example the first number, and then it sees if it's bigger than the other numbers that were inputed. If the number is bigger or equal to everything else, it will output that number.
         if(num1 > num2 && num1 > num3 && num1 > num4 && num1 > num5){
             c.println("The highest number was " + num1);
         }
