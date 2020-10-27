@@ -65,11 +65,12 @@ return (((double)temp)/Math.pow(10,c));
         tip = c.readDouble();
         //This variable calculates the total cost of everything combined by add the billTotal and the tip.
         double finalCost = tip + billTotal + taxes;
-        //Here I am tellilng the user how my much they need to pay.
+        //Next I will be rounding all of the final numbers
         billTotal = roundToDecimals(billTotal,2);
         taxes = roundToDecimals(taxes,2);
         tip = roundToDecimals(tip,2);
         finalCost = roundToDecimals(finalCost,2);
+        //Here I am tellilng the user how my much they need to pay.
         c.println("------------------------------------------------");
         c.println("-----------------Your Bill----------------------");
         c.println("------------------------------------------------");
