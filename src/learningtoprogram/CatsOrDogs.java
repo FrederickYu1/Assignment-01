@@ -30,9 +30,22 @@ public class CatsOrDogs{
         if(home == 1){
             c.println("Do you prefer to read a book or watch tv? Enter 1 for read a book or 2 for watch tv.");
             bookOrWatch = c.readInt();
-                    if(bookOrWatch == 1){
-                        
-                    }
+                if(bookOrWatch == 1){
+                    c.println("You are a siamese cat person!");
+                }
+                else{
+                    c.println("You are a cheshire cat person!");
+                }
+        }
+        else{
+            c.println("Do you prefer to g o to a jazz bar or a wild party. Enter 1 for jazz bar or enter 2 for wild party");
+            jazzOrWild = c.readInt();
+                if(jazzOrWild == 1){
+                    c.println("You are a poodle person!");
+                }
+                else{
+                    c.println("You are a beagle person!");
+                }
         }
     }
 
