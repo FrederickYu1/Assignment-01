@@ -78,6 +78,21 @@ return (((double)temp)/Math.pow(10,c));
         c.println("Taxes:              $" + taxes);
         c.println("Tip:                $" + tip);
         c.println("Total:              $" + finalCost);
+        c.println("------------------------------------------------");
+        //Lastly I need to create and if statement to check if they paid enough money. 
+        double amountPaid;
+        c.println("Enter the amount paid: ");
+        amountPaid = c.readDouble();
+        //This if statements looks at if they paid the correct amount, if they paid less I will call the police, if they paid mroe I will thahk them. 
+        if(amountPaid < finalCost){
+            c.println("That is not enough money. I will have to call the police.");
+        }
+        else if (amountPaid > finalCost){
+            c.println("Thank you so much for the extra donation!");
+        }
+        else{
+            c.println("Thank you so much. Have a great day!");
+        }
     }
 
 }
