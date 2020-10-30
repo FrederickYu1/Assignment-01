@@ -34,15 +34,16 @@ return (((double)temp)/Math.pow(10,c));
         //I first create an Introdcution
         c.println("The name of this restaurant is McDonald");
         c.println("Hello! Welcome to McDonalds, the biggest fast food burger chain!");
-        c.println("** Hi, my nmae is Frederick and I will be your server tonight! **");
-        c.println("Served on");
+        c.println("*** Hi, my name is Frederick and I will be your server tonight! ***");
+        c.print("Today's date and time is ");
         c.printDate();
-        c.println(" ");
+        c.print(" at ");
         c.printTime();
         c.println(" ");
         //I am setting up a variable that I can use later to store the bill
         double billTotal;
         //This is providing the user the qeustion to how much they will be paying
+        c.println(" ");
         c.println("I hope you had a great evening what would your bill total be today?");
         //This let's the program read what the user says.
         billTotal = c.readDouble();
