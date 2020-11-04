@@ -91,7 +91,7 @@ public static void menu(Console c){
     c.println("1) Linear Equations");
     c.println("2) Boolean Logic");
     c.println("3) Number Fun");
-    c.println("4) Word Math");
+    c.println("4) Word Fun");
     c.println("5) Quadratic Equations");
     c.println("6) Statistics");
     //This reads which option the user chooses.
@@ -235,8 +235,30 @@ public static void menu(Console c){
     }
     else if(menu == 4){
         c.clear();
-        c.println("Great you have chosen Word Math!");
-        c.println("Sorry this is still under construction");
+        c.println("Great you have chosen Word Fun!");
+        String word;
+        c.println("Please enter a 4-letter word:");
+        word = c.readLine();
+        char letter1 = word.charAt(0);
+        char letter2 = word.charAt(1);
+        char letter3 = word.charAt(2);
+        char letter4 = word.charAt(3);
+        int count = 0;
+        if(letter1 == 'a' || letter1 == 'i' || letter1 == 'e'|| letter1 == 'o' || letter1 == 'u'){
+            count += 1;
+            if(letter2 == 'a' || letter2 == 'i' || letter2 == 'e'|| letter2 == 'o' || letter2 == 'u'){
+            count +=1;
+            }
+            if(letter3 == 'a' || letter3 == 'i' || letter3 == 'e'|| letter3 == 'o' || letter3 == 'u'){
+            count +=1;
+            }
+            if(letter4 == 'a' || letter4 == 'i' || letter4 == 'e'|| letter4 == 'o' || letter4 == 'u'){
+            count +=1;
+            }
+            else{
+                c.println("There were no vowels");
+            }
+        c.println(count);
         }
     else if(menu == 5){
         c.clear();
@@ -250,7 +272,7 @@ public static void menu(Console c){
         }
 }
 }
-
+}
 
 
 
